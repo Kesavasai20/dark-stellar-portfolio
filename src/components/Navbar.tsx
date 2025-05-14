@@ -22,6 +22,15 @@ const Navbar = () => {
     };
   }, []);
 
+  // Scroll to section function
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      setMobileMenuOpen(false);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -33,10 +42,30 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="text-white/80 hover:text-theme-purple transition-colors">About</a>
-          <a href="#projects" className="text-white/80 hover:text-theme-purple transition-colors">Projects</a>
-          <a href="#skills" className="text-white/80 hover:text-theme-purple transition-colors">Skills</a>
-          <a href="#contact" className="text-white/80 hover:text-theme-purple transition-colors">Contact</a>
+          <button 
+            onClick={() => scrollToSection('about')} 
+            className="text-white/80 hover:text-theme-purple transition-colors"
+          >
+            About
+          </button>
+          <button 
+            onClick={() => scrollToSection('projects')} 
+            className="text-white/80 hover:text-theme-purple transition-colors"
+          >
+            Projects
+          </button>
+          <button 
+            onClick={() => scrollToSection('skills')} 
+            className="text-white/80 hover:text-theme-purple transition-colors"
+          >
+            Skills
+          </button>
+          <button 
+            onClick={() => scrollToSection('contact')} 
+            className="text-white/80 hover:text-theme-purple transition-colors"
+          >
+            Contact
+          </button>
           <Button className="bg-theme-purple hover:bg-theme-purple-light text-white">Resume</Button>
         </nav>
 
@@ -63,34 +92,30 @@ const Navbar = () => {
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-md border-t border-white/10 py-4 animate-fade-in">
             <div className="container mx-auto px-4 flex flex-col space-y-4">
-              <a 
-                href="#about" 
+              <button 
+                onClick={() => scrollToSection('about')} 
                 className="text-white/80 hover:text-theme-purple transition-colors px-4 py-2"
-                onClick={() => setMobileMenuOpen(false)}
               >
                 About
-              </a>
-              <a 
-                href="#projects" 
+              </button>
+              <button 
+                onClick={() => scrollToSection('projects')} 
                 className="text-white/80 hover:text-theme-purple transition-colors px-4 py-2"
-                onClick={() => setMobileMenuOpen(false)}
               >
                 Projects
-              </a>
-              <a 
-                href="#skills" 
+              </button>
+              <button 
+                onClick={() => scrollToSection('skills')} 
                 className="text-white/80 hover:text-theme-purple transition-colors px-4 py-2"
-                onClick={() => setMobileMenuOpen(false)}
               >
                 Skills
-              </a>
-              <a 
-                href="#contact" 
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')} 
                 className="text-white/80 hover:text-theme-purple transition-colors px-4 py-2"
-                onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
-              </a>
+              </button>
               <Button 
                 className="bg-theme-purple hover:bg-theme-purple-light text-white mx-4"
                 onClick={() => setMobileMenuOpen(false)}

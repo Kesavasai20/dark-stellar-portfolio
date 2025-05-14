@@ -59,13 +59,17 @@ const Contact = () => {
       icon: <Linkedin className="w-5 h-5" />,
       title: "LinkedIn",
       value: "K KESAVA SAI",
-      link: "https://linkedin.com/in/k-kesava-sai"
+      link: "https://linkedin.com/in/k-kesava-sai",
+      target: "_blank",
+      rel: "noopener noreferrer"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
       title: "Location",
       value: "Tamil Nadu, India",
-      link: "https://maps.google.com/?q=Tamil+Nadu,India"
+      link: "https://maps.google.com/?q=Tamil+Nadu,India",
+      target: "_blank",
+      rel: "noopener noreferrer"
     }
   ];
 
@@ -167,6 +171,8 @@ const Contact = () => {
                   <a 
                     href={info.link} 
                     className="text-theme-cool-gray hover:text-theme-purple transition-colors"
+                    target={info.target}
+                    rel={info.rel}
                   >
                     {info.value}
                   </a>
@@ -184,12 +190,12 @@ const Contact = () => {
                 </a>
                 
                 {/* Discord */}
-                <a href="#" className="bg-theme-dark-accent p-3 rounded-lg border border-white/10 hover:border-theme-purple transition-all duration-300 hover:scale-110">
+                <a href="https://discord.com/users/kkesavasai" target="_blank" rel="noopener noreferrer" className="bg-theme-dark-accent p-3 rounded-lg border border-white/10 hover:border-theme-purple transition-all duration-300 hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8.59 9.12h6.81M8.59 14.88h6.81M18.4 4.89l-12.8.01c-1.66 0-3 1.35-3 3.01v8.2c0 1.66 1.34 3.01 3 3.01h12.8c1.66 0 3-1.35 3-3.01v-8.2c0-1.66-1.34-3.01-3-3.01Z"></path><path d="m4.6 5.36 1.05-1.62a2.53 2.53 0 0 1 2.15-1.24h8.39c.92 0 1.76.46 2.16 1.24l1.05 1.62"></path><path d="m9.2 17.93-4.6 1.52 1.79-7.1"></path><path d="m14.8 17.93 4.6 1.52-1.79-7.1"></path></svg>
                 </a>
                 
                 {/* LinkedIn */}
-                <a href="https://linkedin.com/in/k-kesava-sai" className="bg-theme-dark-accent p-3 rounded-lg border border-white/10 hover:border-theme-purple transition-all duration-300 hover:scale-110">
+                <a href="https://linkedin.com/in/k-kesava-sai" target="_blank" rel="noopener noreferrer" className="bg-theme-dark-accent p-3 rounded-lg border border-white/10 hover:border-theme-purple transition-all duration-300 hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 </a>
                 
