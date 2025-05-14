@@ -28,7 +28,7 @@ const About = () => {
               />
             </div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/80 backdrop-blur-sm py-6 px-8 rounded-lg border border-white/10 z-20 w-3/4">
-              <p className="text-theme-purple font-bold text-xl mb-1">5+ Years of Experience</p>
+              <p className="text-theme-purple font-bold text-xl mb-1">2+ Years of Experience</p>
               <p className="text-white/80 text-sm">Creating digital experiences</p>
             </div>
           </div>
@@ -36,7 +36,7 @@ const About = () => {
           <div className="animate-fade-in">
             <h3 className="text-2xl font-bold mb-4">Who am I?</h3>
             <p className="text-white/70 mb-6">
-              I am a passionate developer and designer with expertise in creating stunning, functional websites and applications. With a strong background in both design and development, I bring a unique perspective to every project.
+              I am KESAVA SAI K, a passionate developer and designer with expertise in creating stunning, functional websites and applications. With a strong background in both design and development, I bring a unique perspective to every project.
             </p>
             <p className="text-white/70 mb-6">
               My approach combines technical knowledge with creative thinking to deliver solutions that not only look great but also perform exceptionally well. I believe in clean, efficient code and intuitive user experiences.

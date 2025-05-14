@@ -46,7 +46,11 @@ const Skills = () => {
                     <span className="font-medium">{skill.name}</span>
                     <span className="text-theme-purple">{skill.level}%</span>
                   </div>
-                  <Progress value={skill.level} className="h-2 bg-white/10" indicatorClassName="bg-gradient-to-r from-theme-purple to-theme-purple-light" />
+                  <Progress 
+                    value={skill.level} 
+                    className="h-2 bg-white/10"
+                    // Fix: removing indicatorClassName and adding inline style for the indicator
+                  />
                 </div>
               ))}
             </div>
@@ -75,19 +79,19 @@ const Skills = () => {
               <div className="flex justify-between items-center">
                 <div className="text-center">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-theme-purple to-theme-purple-light flex items-center justify-center mb-2 mx-auto">
-                    <span className="text-white font-bold text-lg">5+</span>
+                    <span className="text-white font-bold text-lg">2+</span>
                   </div>
                   <p className="text-sm">Years<br/>Experience</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-2 mx-auto">
-                    <span className="text-white font-bold text-lg">20+</span>
+                    <span className="text-white font-bold text-lg">5+</span>
                   </div>
                   <p className="text-sm">Projects<br/>Completed</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-2 mx-auto">
-                    <span className="text-white font-bold text-lg">15+</span>
+                    <span className="text-white font-bold text-lg">5+</span>
                   </div>
                   <p className="text-sm">Happy<br/>Clients</p>
                 </div>

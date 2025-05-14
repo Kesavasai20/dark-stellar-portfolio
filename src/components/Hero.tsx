@@ -56,8 +56,8 @@ const Hero = () => {
           <div className="text-center md:text-left">
             <p className="text-theme-purple mb-2 font-medium tracking-wider">WELCOME TO MY PORTFOLIO</p>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Hello, I'm a <br />
-              <span className="gradient-text">
+              Hello, I'm <span className="gradient-text">KESAVA SAI K</span> <br />
+              a <span className="gradient-text">
                 <span ref={textRef} className="typing-text"></span>
               </span>
             </h1>
@@ -83,7 +83,7 @@ const Hero = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-theme-dark-accent p-4 rounded-lg z-20 shadow-lg">
-                <p className="text-theme-purple font-bold">5+ Years</p>
+                <p className="text-theme-purple font-bold">2+ Years</p>
                 <p className="text-white/80 text-sm">Experience</p>
               </div>
             </div>

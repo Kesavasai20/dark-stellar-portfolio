@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, User, MessageSquare } from "lucide-react";
+import { Mail, Linkedin, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -46,20 +46,26 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      value: "yourname@example.com",
-      link: "mailto:yourname@example.com"
+      value: "kammorukesavasai@gmail.com",
+      link: "mailto:kammorukesavasai@gmail.com"
     },
     {
-      icon: <MessageSquare className="w-5 h-5" />,
-      title: "Discord",
-      value: "yourusername",
-      link: "#"
+      icon: <Phone className="w-5 h-5" />,
+      title: "Phone",
+      value: "+91 7680943539",
+      link: "tel:+917680943539"
     },
     {
-      icon: <User className="w-5 h-5" />,
+      icon: <Linkedin className="w-5 h-5" />,
       title: "LinkedIn",
-      value: "yourlinkedin",
-      link: "https://linkedin.com/"
+      value: "K KESAVA SAI",
+      link: "https://linkedin.com/in/k-kesava-sai"
+    },
+    {
+      icon: <MapPin className="w-5 h-5" />,
+      title: "Location",
+      value: "Tamil Nadu, India",
+      link: "https://maps.google.com/?q=Tamil+Nadu,India"
     }
   ];
 
@@ -177,13 +183,13 @@ const Contact = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
                 
-                {/* Twitter */}
+                {/* Discord */}
                 <a href="#" className="bg-theme-dark-accent p-3 rounded-lg border border-white/10 hover:border-theme-purple transition-all duration-300 hover:scale-110">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8.59 9.12h6.81M8.59 14.88h6.81M18.4 4.89l-12.8.01c-1.66 0-3 1.35-3 3.01v8.2c0 1.66 1.34 3.01 3 3.01h12.8c1.66 0 3-1.35 3-3.01v-8.2c0-1.66-1.34-3.01-3-3.01Z"></path><path d="m4.6 5.36 1.05-1.62a2.53 2.53 0 0 1 2.15-1.24h8.39c.92 0 1.76.46 2.16 1.24l1.05 1.62"></path><path d="m9.2 17.93-4.6 1.52 1.79-7.1"></path><path d="m14.8 17.93 4.6 1.52-1.79-7.1"></path></svg>
                 </a>
                 
                 {/* LinkedIn */}
-                <a href="#" className="bg-theme-dark-accent p-3 rounded-lg border border-white/10 hover:border-theme-purple transition-all duration-300 hover:scale-110">
+                <a href="https://linkedin.com/in/k-kesava-sai" className="bg-theme-dark-accent p-3 rounded-lg border border-white/10 hover:border-theme-purple transition-all duration-300 hover:scale-110">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 </a>
                 
